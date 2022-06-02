@@ -16,8 +16,8 @@ public class LambdaDemo
             return 0;
         }
         int i = 0;
-        for(String ss : s.split(",")){
-            if((!ss.isEmpty() && !ss.equals(" "))){
+        for(String ss : s.split(",+")){
+            if((!ss.isEmpty() && !ss.equals(" ") && !ss.equals(","))){
                 i++;
             }
         }

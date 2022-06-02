@@ -40,7 +40,7 @@ public class Tests {
 
         Function<String, Integer> lambda = LambdaDemo.countWordsInString;
         assertEquals(Optional.of(3), Optional.ofNullable(LambdaRunner.run(lambda, s3)));
-        assertEquals(Optional.of(3), Optional.ofNullable(LambdaRunner.run(lambda, "aaa,,,aaa,,,aaa")));
+        assertEquals(Optional.of(3), Optional.ofNullable(LambdaRunner.run(lambda, "aaa,, ,,,, ,aaa ,, ,,,, ,aaa")));
     }
 
     @Test
